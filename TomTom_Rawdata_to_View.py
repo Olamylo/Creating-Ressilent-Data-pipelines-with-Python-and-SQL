@@ -86,6 +86,5 @@ def main():
 
     # raw_to_view('RAWDATA_TOMTOM_TRAFFIC')
 
-
 if __name__ == "__main__":
     main()
