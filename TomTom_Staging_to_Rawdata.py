@@ -56,7 +56,6 @@ def stage_to_raw(stageTable, rawTable):
                 raise Exception(
                     f"Rawdata table: {rawTable} rows count and Staging table: {stageTable} rows count not match! PLEASE INVESTIGATE!")
 
-
 def main():
 
 # Getting list of RAWDATA tables.
