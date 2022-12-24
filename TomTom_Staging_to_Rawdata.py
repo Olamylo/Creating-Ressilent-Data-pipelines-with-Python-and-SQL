@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine
 
-engine = create_engine('mssql+pyodbc://OLAMYLO\SQLEXPRESS/Mylo_DB?driver=SQL+Server+Native+Client+11.0')
-
+engine = create_engine('mssql+pyodbc://servername/databasename?driver=SQL+Server+Native+Client+11.0')
 
 def stage_to_raw(stageTable, rawTable):
     ''' Function to insert data from Staging into RAWDATA after checking on the latest bulk_id with respect to each data source.
