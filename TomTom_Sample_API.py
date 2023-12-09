@@ -48,6 +48,7 @@ for location in locations:
     new_count = count + 1
 
     # df.to_csv('./test_tomtom.csv',index = False, encoding= "utf-8")
+    print(list_df)
 list_df.to_sql('STAGING_TOMTOM_TRAFFIC', con=engine, if_exists='replace', index=False)
 
 # df.to_sql('STAGING_TOMTOM_TRAFFIC', con = engine, if_exists='replace', index=False)
